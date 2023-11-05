@@ -12,9 +12,11 @@ const Layout = ({children}) => {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"/>
         <link rel="stylesheet" href="/styles/styles.css"/>
     </Head>
+
     <Header/>
     {children}
     <Footer/>
+    
     <script src="/js/jquery.min.js"></script>
         <script src="/js/YouTubePopUp.jquery.js"></script>
         <script src="/js/pace.min.js"></script>
