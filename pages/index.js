@@ -1,9 +1,7 @@
-import Layout from "../components/layout"
-
 const Main = () => {
-   return <Layout>
+   return <>
         <p>Popa</p>
-    </Layout>
+    </>
 }
 
 export default Main
