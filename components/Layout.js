@@ -10,7 +10,7 @@ const Layout = ({children}) => {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="../public/favicon.ico"/>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-        {/* <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" /> */}
+        <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"/>
         <link rel="stylesheet" href="/styles/styles.css"/>
     </Head>
@@ -18,15 +18,19 @@ const Layout = ({children}) => {
     <Header/>
     {children}
     <Footer/>
-    
+
         <script src="/js/jquery.min.js"></script>
         <script src="/js/YouTubePopUp.jquery.js"></script>
         <script src="/js/pace.min.js"></script>
         <script src="/js/wow.min.js"></script>
-        <script src="/js/bootstrap.bundle.min.js"></script>
         <script src="/js/feather.min.js"></script>
-        <script src="/js/main.js">
-        </script>
+        <script src="/js/main.js"></script>
+
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
+        <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+        <script src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
+        <script>var Alert = ReactBootstrap.Alert;</script>
     </>
    
 }

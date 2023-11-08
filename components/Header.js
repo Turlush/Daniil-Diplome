@@ -1,5 +1,4 @@
 import Link from "next/link"
-import  Bootstrap  from "bootstrap"
 
 const Header = () => {
 const navLinks = [
