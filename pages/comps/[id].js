@@ -21,7 +21,7 @@ const Comp = () => {
             return
         }
         getData(id)
-    })
+    }, [])
 
     return <>
         {post.id}
