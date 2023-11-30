@@ -1,14 +1,17 @@
+'use client'
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 
 const Comp = () => {
 
     const router = useRouter()
-    const {id} = router.query
-    console.log("id posta", id)
+    const id = router.query.id
+    console.log("id posta", id)    
+    console.log("router", router)
+
     const [post, setPost] = useState({})
 
-    const getData = async (id) => {
+    const getData = async () => {
         await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
         .then(response => response.json())
         .then(json => {console.log(json)
@@ -20,7 +23,7 @@ const Comp = () => {
         if (!id) {
             return
         }
-        getData(id)
+        getData()
     }, [])
 
     return <>
