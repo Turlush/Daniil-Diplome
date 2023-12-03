@@ -21,7 +21,7 @@ const Comps = () => {
         <ul>
             {!!posts && posts.map(post => {
                 return <li key={post.id}>
-                    <Link href={`/posts/${post.id}`}>
+                    <Link href={`/comps/${post.id}`}>
                         <a>
                             {post.title}
                         </a>
